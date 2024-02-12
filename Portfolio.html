@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/Portfolio.css">
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('HZ1Ih63kAcdLWJnih')
+    </script>
     <script src="https://kit.fontawesome.com/0b8bc254d8.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="images/icons/codigo.png" type="image/x-icon">
-    <title>Portfolio DMajano</title>
+    <title>Portafolio DMajano</title>
 </head>
 <body>
     <nav class="menu">
@@ -18,7 +24,7 @@
         <div class="navbar">
             <a href="#acerca-de">Acerca de</a>
             <a href="#contacto">Contacto</a>
-        </div>
+        </div>  
 
 
         <div class="oculto">
@@ -61,7 +67,7 @@
                     <div class="contenedor-texto segundo">
                         <h2>Back-End</h2>
                         <p>
-                            <span class="gradient">Lorem</span> con mas de 3 años de experiencial
+                            <span class="gradient">Programador</span> con mas de 3 años de experiencial
                             capacitado para realizar y desempeñar al 100% mis capacidades
                             en el area del <span class="gradient">Back-End.</span> 
                         </p>
@@ -88,7 +94,6 @@
             </div>
         </section>
 
-
         <section class="contacto hidden" id="contacto">
             <div class="contenedor">
                 <div class="contenedor-texto-contacto">
@@ -96,13 +101,14 @@
                 </div>
 
                 <div class="form-contenedor">
-                    <form action="#" method="post">
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-                        <input type="email" name="correo" id="correo" placeholder="Correo" required>
-                        <textarea name="mensaje" id="mensaje" placeholder="Dejame un Mensaje..." required></textarea>
-                        <button class="btn">
+                    <form action="./pages/mensajeExito.html" method="post" id="form">
+                        <input type="text" name="from_name" id="from_name" placeholder="Nombre" required>
+                        <input type="email" name="email_id" id="email_id" placeholder="Correo" required>
+                        <textarea name="message" id="message" placeholder="Dejame un Mensaje..." required></textarea>
+                        <input type="submit" value="ENVIAR" class="btn" id="button">
+                        <!-- <button class="btn" id="button">
                             ENVIAR
-                        </button>
+                        </button> -->
                     </form>
                 </div>
             </div>
@@ -119,5 +125,6 @@
     </footer>
 
     <script src="./code/duplicationSkills.js"></script>
+    <script src="./code/emailJs.js"></script>
 </body>
 </html>
