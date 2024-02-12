@@ -613,6 +613,11 @@ footer .contenedor .git-hub:hover { background:  #30363d;}
         margin-top: 65px;
     }
 
+    .main .skills-slide {
+        display: inline-block;
+        animation: 23s slide infinite linear;
+    }
+
     .main .contacto .form-contenedor {
         width: 100%;
         padding: 18px;
